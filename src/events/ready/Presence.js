@@ -8,7 +8,7 @@ module.exports =
    */
   async (client) => {
     client.user.setPresence({
-      activities: [{ name: "Bot is starting", type: ActivityType.Playing }],
+      activities: [{ name: "bot is starting", type: ActivityType.Playing }],
       status: "idle",
     });
 
@@ -24,8 +24,8 @@ module.exports =
             {
               Activity: [
                 {
-                  Name: "Bot is working",
-                  Type: ActivityType.Playing,
+                  Name: `/giveaway`,
+                  Type: ActivityType.Listening,
                 },
               ],
               Status: "online",

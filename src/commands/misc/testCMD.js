@@ -1,4 +1,8 @@
-const { SlashCommandBuilder, PermissionFlagsBits, EmbedBuilder  } = require("discord.js");
+const {
+  SlashCommandBuilder,
+  PermissionFlagsBits,
+  EmbedBuilder,
+} = require("discord.js");
 const mConfig = require("../../messageConfig.json");
 
 const command = {
@@ -17,7 +21,7 @@ const command = {
       const embed = new EmbedBuilder()
         .setTitle("Test Message")
         .setDescription("Everything seems to be working fine.")
-        .setColor(mConfig.embedColorSuccess)
+        .setColor(mConfig.embedColorSuccess);
 
       await interaction.reply({ embeds: [embed], ephemeral: true });
     } catch (err) {
@@ -29,12 +33,13 @@ const command = {
   autocomplete: async (client, interaction) => {
     try {
       //...
-
     } catch (err) {
-      console.log("[ERROR]".red + "Error in your testCMD.js autocomplete function:");
+      console.log(
+        "[ERROR]".red + "Error in your testCMD.js autocomplete function:"
+      );
       console.log(err);
     }
-  }
+  },
 };
 
 module.exports = command;
