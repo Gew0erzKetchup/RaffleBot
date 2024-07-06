@@ -10,7 +10,7 @@ const command = {
     .setName("test")
     .setDescription("Test if everything works.")
     .toJSON(),
-  testMode: true,
+  testMode: false,
   devOnly: true,
   deleted: false,
   userPermissions: [],
