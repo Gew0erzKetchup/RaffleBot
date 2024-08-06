@@ -12,7 +12,7 @@ Raffle is a user-friendly Discord bot for creating and managing giveaways. We ar
 
 ## Open Source
 
-Raffle will be fully open source, allowing you to view the source code, contribute, and make customizations.
+Raffle will be fully open source, allowing you to view the source code, and contribute
 
 ## Release
 
